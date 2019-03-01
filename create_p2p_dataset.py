@@ -20,7 +20,7 @@ RAW_DATSET_FILENAME = 'accepted_2007_to_2018Q3.csv.gz'
 SCRIPT_DIR = pathlib.Path(__name__).parent
 BROWSE_COLUMN_FILEPATH = SCRIPT_DIR / 'browse_cols_from_data_dictionary.txt'
 RAW_DATA_DIR = SCRIPT_DIR / 'raw_data'
-PROCESSED_DATA_DIR = SCRIPT_DIR / 'processed_data/'
+PROCESSED_DATA_DIR = SCRIPT_DIR / 'p2p_loans_470k/'
 
 # defines which variables are categorical (we omit loan_status, since
 # we'll process it later)
