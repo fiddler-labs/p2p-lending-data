@@ -1,0 +1,8 @@
+dtype: {collection_recovery_fee: float64, debt_settlement_flag: category, grade: category,
+  installment: float64, int_rate: float64, issue_d: object, loan_status: category,
+  recoveries: float64, settlement_amount: float64, settlement_date: object, settlement_percentage: float64,
+  settlement_status: category, settlement_term: float64, sub_grade: category, total_pymnt: float64,
+  total_pymnt_inv: float64, total_rec_int: float64, total_rec_late_fee: float64, total_rec_prncp: float64,
+  zip_code_prefix: object}
+index_col: id
+parse_dates: [issue_d, settlement_date]
