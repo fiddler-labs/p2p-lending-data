@@ -1,0 +1,2 @@
+raw_data/* filter=lfs diff=lfs merge=lfs -text
+raw_data/accepted_2007_to_2018Q3.csv.gz filter=lfs diff=lfs merge=lfs -text
