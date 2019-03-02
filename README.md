@@ -27,13 +27,24 @@ install a Kaggle API token (see
 [https://github.com/Kaggle/kaggle-api#api-credentials](https://github.com/Kaggle/kaggle-api#api-credentials) for 
 details). In the case that a new version of the base dataset is uploaded to Kaggle, it will be necessary to manually
 download the old version of the dataset from Kaggle, as at the time of writing the Kaggle API does not appear to support
-downloading previous versions of datasets.
- 
+downloading previous versions of datasets. 
+
 Once you have completed this setup, simply run the default cmake command to install the proper dependencies, download 
 the raw data, and run the processing script:
 
 ```bash
 make
 ```
-
 **Note:** If you want to use a virtualenvironment, create and activate your environment before running `make`.
+
+
+### Advanced
+Alternatively, if you have `git-lfs` installed, you will have access to the full raw dataset just by cloning this
+repository. The standard bulid procedure does not require this dataset to be downloaded, but if you do have `git-lfs` 
+installed and thus pull the raw dataset as part of cloning this repository, you can alternatively run the shorter 
+`make install_requirements process_dataset` command instead of the default make command above.
+ 
+
+# Dataset demo
+You can see a demo Jupyter notebook that shows step by step how to use this dataset for creditworthiness modeling
+[here](https://gist.github.com/lukemerrick/af14f5b498ddf3900ba77c7bd840fc8c).
