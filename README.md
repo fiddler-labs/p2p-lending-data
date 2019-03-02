@@ -41,8 +41,11 @@ make
 ### Advanced
 Alternatively, if you have `git-lfs` installed, you will have access to the full raw dataset just by cloning this
 repository. The standard bulid procedure does not require this dataset to be downloaded, but if you do have `git-lfs` 
-installed and thus pull the raw dataset as part of cloning this repository, you can alternatively run the shorter 
-`make install_requirements process_dataset` command instead of the default make command above.
+installed and thus pull the raw dataset as part of cloning this repository, you can alternatively run the following
+shorter make sequence to avoid the step of downloading the raw data from Kaggle:
+```bash
+make install_requirements process_data
+```
  
 
 # Dataset demo
