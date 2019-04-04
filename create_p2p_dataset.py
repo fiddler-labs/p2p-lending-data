@@ -154,10 +154,10 @@ def main():
     # write to disk
     LOG.info('Writing the processed data to disk...')
     train_features.to_csv(
-        PROCESSED_DATA_DIR / 'train' / 'train_features.csv.zip')
-    train_labels.to_csv(PROCESSED_DATA_DIR / 'train' / 'train_labels.csv.zip')
-    test_features.to_csv(PROCESSED_DATA_DIR / 'test' / 'test_features.csv.zip')
-    test_labels.to_csv(PROCESSED_DATA_DIR / 'test' / 'test_labels.csv.zip')
+        PROCESSED_DATA_DIR / 'train' / 'train_features.csv.gz')
+    train_labels.to_csv(PROCESSED_DATA_DIR / 'train' / 'train_labels.csv.gz')
+    test_features.to_csv(PROCESSED_DATA_DIR / 'test' / 'test_features.csv.gz')
+    test_labels.to_csv(PROCESSED_DATA_DIR / 'test' / 'test_labels.csv.gz')
 
     # also export the data schema as yaml files
     LOG.info('Writing schemas to disk as well')
